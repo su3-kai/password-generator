@@ -24,6 +24,11 @@ generateBtn.addEventListener("click", () => {
         characters += "._";
     }
 
+    if (characters === "") {
+        alert("少なくとも１つにチェックを入れてください。");
+        return;
+    }
+
     let password = "";
 
     for (let i = 0; i < length; i++) {
